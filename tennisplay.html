@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <link rel="stylesheet" href="out.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ténis Play</title>
+  <style>
+    .location-menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 1rem;
+    }
+  
+    .location-menu button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #0077cc;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  
+    .location-menu button:hover {
+      background-color: #005fa3;
+    }
+  
+    .location-info {
+      display: none;
+      margin-top: 1rem;
+      border-top: 2px solid #ccc;
+      padding-top: 1rem;
+    }
+  
+    .location-info.active {
+      display: block;
+    }
+  </style>
+  
+</head>
+<body>
+
+<input type="checkbox" id="checkbox">
+<label class="btn" for="checkbox">
+  <img src="menu.png" alt="Menu icon" class="menu-icon">
+  <span>Menu</span>
+</label>
+
+<div class="sidebar">
+  <ul>
+    <li><a href="#" class="menu-link active" data-target="inicio"><img src="ball.png" class="icon" alt="Início"> Início</a></li>
+    <li><a href="#" class="menu-link" data-target="locais"><img src="local.png" class="icon" alt="Locais"> Locais</a></li>
+    <li><a href="#" class="menu-link" data-target="treinadores"><img src="treinador.png" class="icon" alt="Treinadores"> Treinadores</a></li>
+    <li><a href="#" class="menu-link" data-target="cameras"><img src="camera.png" class="icon" alt="Câmeras"> Câmeras</a></li>
+    <li><a href="#" class="menu-link" data-target="agenda"><img src="agenda.png" class="icon" alt="Agenda"> Agenda</a></li>
+  </ul>
+</div>
+
+<div class="content">
+  <div id="inicio" class="page active-page">
+    <h2>Bem-vindo ao Ténis Play, o teu parceiro no Ténis</h2>
+
+    <div class="box">
+      <h2>História</h2>
+      <p>O Ténis tem mais de 26 milhões de praticantes nos vários países da Europa.
+        Em Portugal, é um dos desportos mais apreciados (depois do futebol).
+        Inspirado num jogo francês antigo, do século XII o "jogo de palma", era praticado
+        por monges, atiravam a bola de couro com as mãos contra as paredes dos
+        mosteiro. Mais tarde evoluiu para o uso das raquetes.
+      </p>
+      <img src="Jeu_de_paume.jpg" class="imgg" />
+      <p>&#169; pt.wikipedia.org</p>
+    </div>
+
+    <div class="box">
+      <h2>Objetivo</h2>
+      <p>Passar a bola por cima da rede, que divide o campo em metade, colocando-a no campo do adversário para criar dificuldades na sua devolução, levando à conquista de um ponto.</p>
+    </div>
+
+    <div class="box">
+      <h3>Terreno do jogo</h3>
+      <img src="Captura de ecrã 2025-05-02 125353.png" class="ttr" />
+      <p>&#169; studocu.com</p>
+    </div>
+
+    <div class="box">
+      <h3>Material</h3>
+      <img src="images.jpg" class="mmr" />
+      <p>&#169;pt.123rf.com</p>
+    </div>
+    <div class="box">
+      <h3>Jogadores</h3>
+      <p>Singulares(2 Jogadores)</p>
+      <p>Pares(4 Jogadores)</p>
+    </div>
+    <div class="box">
+      <h3>Sistema de pontos</h3>
+      <p>A pontuação começa no 0 chamado de "love", seguido de 15, 30, 40. Se ambos chegarem a 40-40, chama-se "deuce", e um jogador precisa de marcar dois pontos consecutivos para ganhar o jogo.</p>
+    </div>
+    <div class="box">
+      <h3>Benefícios do Ténis</h3>
+     <p>Reduz o sedentarismo, e torna o sistema neuromuscular mais saudável</p>
+     <p>Melhora a capacidade de resolver problemas do dia-a-dia</p>
+     <p>Uma hora de ténis pode queimar até 870 calorias</p>
+      <p>Mais serviços no campo, menos horas no sofá</p>
+    </div>
+  </div>
+  
+
+  <style>
+    .location-menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 1rem;
+    }
+  
+    .location-menu button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #0077cc;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  
+    .location-menu button:hover {
+      background-color: #005fa3;
+    }
+  
+    .location-info {
+      display: none;
+      margin-top: 1rem;
+      border-top: 2px solid #ccc;
+      padding-top: 1rem;
+    }
+    #ceto-button:hover { background-color: #ff0000; }
+#quinta-button:hover { background-color: #ff0000; }
+#nova-button:hover { background-color: #ff0000; }
+#jamor-button:hover { background-color: #ff0000; }
+#ceto-button:hover {
+  background-color: #ff0000 !important;
+  color: black; /* or any other color */
+}
+
+#quinta-button:hover {
+  background-color: #ff0000 !important;
+  color: black;
+}
+
+#nova-button:hover {
+  background-color:#ff0000 !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+#jamor-button:hover {
+  background-color: #ff0000 !important;
+  color: black;
+}
+
+    .location-info.active {
+      display: block;
+    }
+  </style>
+  
+  <div id="locais" class="page">
+    <h1>E agora aonde treinar?</h1>
+    <p>Experimentar ou praticar um novo desporto não tem de ser uma dor de cabeça</p>
+  
+    <div class="location-menu">
+      <button id="ceto-button" onclick="showLocation('ceto')">CETO</button>
+      <button id="quinta-button" onclick="showLocation('quinta')">Quinta da Moura</button>
+      <button id="nova-button" onclick="showLocation('nova')">Nova Morada</button>
+      <button id="jamor-button" onclick="showLocation('jamor')">Jamor</button>
+    </div>
+  
+    <div id="ceto" class="location-info">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13690.02850782416!2d-9.334102391748962!3d38.68750964322129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ec929c12378dd%3A0xb285de4b3c44289d!2sCETO%20-%20Clube%20Escola%20de%20T%C3%A9nis%20de%20Oeiras!5e1!3m2!1spt-PT!2spt!4v1746441909145!5m2!1spt-PT!2spt" width="300" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      <p>O CETO localiza-se: R. José Diogo da Silva, 2780-337 Oeiras</p>
+      <p>Horários: Dias úteis: 9h às 22h, Sábados: 9h às 20h, Domingos: 9h às 13h</p>
+      <p>Website: <a href="http://jcstennisacademy.pt/" target="_blank">jcstennisacademy.pt</a></p>
+      <p>Nº de telefone: 910393014</p>
+    </div>
+  
+    <div id="quinta" class="location-info">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27374.539766945934!2d-9.30373196523438!3d38.70192489549974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecea0aa00f05d%3A0x9c916921d4f198e0!2sClube%20de%20Campo%20Quinta%20da%20Moura!5e1!3m2!1spt-PT!2spt!4v1745834080811!5m2!1spt-PT!2spt" width="300" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      <p>O Clube de Campo Quinta da Moura localiza-se: R. Q.ta da Moura 1, 2730-205</p>
+      <p>Horários: Todos os dias das 8h às 23h</p>
+      <p>Website: <a href="http://www.quintadamoura.com/" target="_blank">quintadamoura.com</a></p>
+      <p>Nº de telefone: 210129577</p>
+    </div>
+  
+    <div id="nova" class="location-info">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27380.758502962737!2d-9.352026925683646!3d38.6856765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1eceb42dd0517f%3A0x858a7fdd927f0656!2sT%C3%A9nis%20Nova%20Morada!5e1!3m2!1spt-PT!2spt!4v1745836587185!5m2!1spt-PT!2spt" width="300" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      <p>O Ténis Nova Morada localiza-se: Av. Fundadores 26, 2770-072 Paço de Arcos</p>
+      <p>Horários: Dias úteis: 9h às 23h, Sábados: 9h às 19h, Domingos: 9h às 13h</p>
+      <p>Website: <a href="https://www.tenisnovamorada.com/" target="_blank">tenisnovamorada.com</a></p>
+      <p>Nº de telefone: 910338480</p>
+    </div>
+  
+    <div id="jamor" class="location-info">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27372.128284999293!2d-9.290455925683622!3d38.70822410000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecc744046f473%3A0x11becc335a682200!2sClube%20de%20T%C3%A9nis%20do%20Jamor!5e1!3m2!1spt-PT!2spt!4v1745836652423!5m2!1spt-PT!2spt" width="300" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      <p>O Clube de Ténis do Jamor localiza-se: Complexo de Ténis do Estádio Nacional Dafundo</p>
+      <p>Horários: Dias úteis: 8h às 22h, Fins de semana: 8h às 20h</p>
+      <p>Nº de telefone: 214193054</p>
+    </div>
+  </div>
+  
+  <script>
+    function showLocation(id) {
+      const allLocations = document.querySelectorAll('.location-info');
+      allLocations.forEach(loc => loc.classList.remove('active'));
+  
+      const selected = document.getElementById(id);
+      if (selected) selected.classList.add('active');
+    }
+  </script>
+  
+  <div id="treinadores" class="page"></div>
+  <div id="cameras" class="page"></div>
+  <div id="agenda" class="page"></div>
+</div>
+
+
+
+<script>
+  const links = document.querySelectorAll('.menu-link');
+  const pages = document.querySelectorAll('.page');
+  const checkbox = document.getElementById('checkbox');
+
+  links.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent reload
+
+      links.forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+
+      pages.forEach(page => page.classList.remove('active-page'));
+      const targetId = this.getAttribute('data-target');
+      document.getElementById(targetId).classList.add('active-page');
+
+      checkbox.checked = false; // Close sidebar
+    });
+  });
+  function showLocation(id) {
+    const all = document.querySelectorAll('.location-info');
+    all.forEach(el => el.classList.remove('active'));
+
+    const selected = document.getElementById(id);
+    if (selected) selected.classList.add('active');
+  }
+
+
+</script>
+
+</body>
+</html>
