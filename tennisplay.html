@@ -4,43 +4,24 @@
   <link rel="stylesheet" href="out.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ténis Play</title>
-  <style>
-    .location-menu {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 1rem;
+ <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8">
+  <title>Ténis Play</title>
+    <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
     }
-  
-    .location-menu button {
-      padding: 10px 20px;
-      border: none;
-      background-color: #0077cc;
-      color: white;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-  
-    .location-menu button:hover {
-      background-color: #005fa3;
-    }
-  
-    .location-info {
-      display: none;
-      margin-top: 1rem;
-      border-top: 2px solid #ccc;
-      padding-top: 1rem;
-    }
-  
-    .location-info.active {
-      display: block;
+
+    select {
+      padding: 5px;
+      font-size: 14px;
     }
   </style>
-  
 </head>
 <body>
-
 <input type="checkbox" id="checkbox">
 <label class="btn" for="checkbox">
   <img src="menu.png" alt="Menu icon" class="menu-icon">
@@ -52,17 +33,20 @@
     <li><a href="#" class="menu-link active" data-target="inicio"><img src="ball.png" class="icon" alt="Início"> Início</a></li>
     <li><a href="#" class="menu-link" data-target="locais"><img src="local.png" class="icon" alt="Locais"> Locais</a></li>
     <li><a href="#" class="menu-link" data-target="treinadores"><img src="treinador.png" class="icon" alt="Treinadores"> Treinadores</a></li>
-    <li><a href="#" class="menu-link" data-target="cameras"><img src="camera.png" class="icon" alt="Câmeras"> Câmeras</a></li>
     <li><a href="#" class="menu-link" data-target="agenda"><img src="agenda.png" class="icon" alt="Agenda"> Agenda</a></li>
+    <li><a href="#" class="menu-link" data-target="Notícias"><img src="news.png" class="icon" alt="Notícias"> Notícias</a></li>
+    <li><a href="#" class="menu-link" data-target="Agora és tu"><img src="trofeu.png" class="icon" alt="Agora és tu"> Agora és tu</a></li>
   </ul>
 </div>
 
 <div class="content">
   <div id="inicio" class="page active-page">
-    <h2>Bem-vindo ao Ténis Play, o teu parceiro no Ténis</h2>
-
+    <h2>Bem-vindo ao Ténis Play, o teu parceiro do Desporto</h2>
     <div class="box">
-      <h2>História</h2>
+<p>Aqui vais ter informações sobre o Ténis, locais onde praticar, treinadores disponíveis, agenda de jogos atualizada e informações gerais para aprederes de forma autónoma a jogar.</p>
+</div>
+    <div class="box">
+      <h3>História</h3>
       <p>O Ténis tem mais de 26 milhões de praticantes nos vários países da Europa.
         Em Portugal, é um dos desportos mais apreciados (depois do futebol).
         Inspirado num jogo francês antigo, do século XII o "jogo de palma", era praticado
@@ -74,7 +58,7 @@
     </div>
 
     <div class="box">
-      <h2>Objetivo</h2>
+      <h3>Objetivo</h3>
       <p>Passar a bola por cima da rede, que divide o campo em metade, colocando-a no campo do adversário para criar dificuldades na sua devolução, levando à conquista de um ponto.</p>
     </div>
 
@@ -111,6 +95,7 @@
   <style>
     .location-menu {
       display: flex;
+      position: fixed;
       flex-wrap: wrap;
       gap: 10px;
       margin-bottom: 1rem;
@@ -119,6 +104,7 @@
     .location-menu button {
       padding: 10px 20px;
       border: none;
+      position: fixed;
       background-color: #0077cc;
       color: white;
       border-radius: 6px;
@@ -128,6 +114,8 @@
   
     .location-menu button:hover {
       background-color: #005fa3;
+      
+      
     }
   
     .location-info {
@@ -163,12 +151,16 @@
     .location-info.active {
       display: block;
     }
+
+
+    
   </style>
   
   <div id="locais" class="page">
     <h1>E agora onde treinar?</h1>
+    <div class="box">
     <p>Experimentar ou praticar um novo desporto não tem de ser uma dor de cabeça</p>
-  
+  </div>
     <div class="location-menu">
       <button id="ceto-button" onclick="showLocation('ceto')">CETO</button>
       <button id="quinta-button" onclick="showLocation('quinta')">Quinta da Moura</button>
@@ -177,54 +169,365 @@
     </div>
   
     <div id="ceto" class="location-info">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13690.02850782416!2d-9.334102391748962!3d38.68750964322129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ec929c12378dd%3A0xb285de4b3c44289d!2sCETO%20-%20Clube%20Escola%20de%20T%C3%A9nis%20de%20Oeiras!5e1!3m2!1spt-PT!2spt!4v1746441909145!5m2!1spt-PT!2spt" width="300" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
-      <p>O CETO localiza-se: R. José Diogo da Silva, 2780-337 Oeiras</p>
-      <p>Horários: Dias úteis: 9h às 22h, Sábados: 9h às 20h, Domingos: 9h às 13h</p>
+      <img src="cetooooo.jpg" alt="CETO" class="location-image">
+      <div class="box">
+      <p>O Pólo de St. Amaro, onde o Clube nasceu, engloba dois campos de Ténis de pó de tijolo, uma parede bate-bolas e um edifício de apoio onde, balneários (M/F) e Gabinete de Fisioterapia.</p>
+      <p class="info">2 Campos Ténis de Terra Batida</p>
+      <p class="info">+</p>
+      <p class="info">1 Parede bate-bolas</p>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13690.02850782416!2d-9.334102391748962!3d38.68750964322129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ec929c12378dd%3A0xb285de4b3c44289xd!2sCETO%20-%20Clube%20Escola%20de%20T%C3%A9nis%20de%20Oeiras!5e1!3m2!1spt-PT!2spt!4v1746441909145!5m2!1spt-PT!2spt" width="300" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
+
+      <div class="box">
+      <br><strong>O CETO localiza-se:</strong></br>
+        <p>R. José Diogo da Silva, 2780-337 Oeiras</p>
+      <b>Horários: </b>
+        <p>Dias úteis: 9h às 22h, Sábados: 9h às 20h, Domingos: 9h às 13h</p>
       <p>Website: <a href="http://jcstennisacademy.pt/" target="_blank">jcstennisacademy.pt</a></p>
-      <p>Nº de telefone: 910393014</p>
+      <b>Nº de telefone:</b> <p>910393014</p>
+      <b>Preçario alugar campos:</b>
+      <p><u>Todos os dias:</u></p>
+      <p><u>Sócios-</u> Singulares 3.00€ Pares 3.00€</p>
+      <p><u>Não Sócios-</u> Singulares 6.00€ Pares 6.00€</p>
+      <u>Fim de semanas e feriados</u>
+      <p><u>Sócios-</u> Singulares 3.50€ Pares 3.50€</p>
+      <p><u>Não Sócios-</u> Singulares 7.00€ Pares 7.00€</p>
+      <p><u>EXTRAS:</u>Taxa de luz-6.00€p/hora</p>
+</div>
+<div class="box">
+<br>&#169;https://www.ceto.com.pt/</br>
+  <p>&#169;https://www.aircourts.com/</p>
+      <p>&#169;https://www.tietennis.com/</p>
     </div>
-  
+  </div>
     <div id="quinta" class="location-info">
+      <img src="campo1.jpg" alt="Quinta" class="location-image1">
+      <img src="campo2.jpg" alt="Quinta" class="location-image1">
+      <div class="box">
+      <p>Rodeado de uma paisagem verdejante e amena, o Clube de Campo Quinta da Moura tem 3 campos de ténis de piso rápido, 1 de relva sintética, 2 campos de padel, club house, snackbar, esplanada, salão social, proshop e espaços de lazer, o que faz deste o local indicado para si e para a sua família.</p>
+      <p class="info">3 Campos Ténis de piso rápido</p>
+      <p class="info">+</p>
+      <p class="info">1 Campo de relva sintética</p>
+      </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27374.539766945934!2d-9.30373196523438!3d38.70192489549974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecea0aa00f05d%3A0x9c916921d4f198e0!2sClube%20de%20Campo%20Quinta%20da%20Moura!5e1!3m2!1spt-PT!2spt!4v1745834080811!5m2!1spt-PT!2spt" width="300" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
-      <p>O Clube de Campo Quinta da Moura localiza-se: R. Q.ta da Moura 1, 2730-205</p>
-      <p>Horários: Todos os dias das 8h às 23h</p>
+      <div class="box">
+      <p><strong>O Clube de Campo Quinta da Moura localiza-se:</strong></p>
+        <p>R. Q.ta da Moura 1, 2730-205</p>
+      <b>Horários: </b>
+        <p>Todos os dias das 8h às 23h</p>
       <p>Website: <a href="http://www.quintadamoura.com/" target="_blank">quintadamoura.com</a></p>
-      <p>Nº de telefone: 210129577</p>
+      <b>Nº de telefone:</b> <p>210129577</p>
+      <b>Preçario alugar campos:</b>
+      <p> Para mais informações consulte o Website <a href="https://www.tietennis.com" target="_blank">tietennis.com</a></p>
+      </div>
+      <div class="box">
+      <br>&#169;https://www.tietennis.com/ccquintadamoura</br>
     </div>
-  
+  </div>
     <div id="nova" class="location-info">
+      <img src="2020-06-14.jpg" alt="Nova" class="location-image2">
+      <img src="tenisCampo2.jpg" alt="Nova" class="location-image2">
+      <div class="box">
+      <p>O Centro de Ténis Nova Morada está situado em Paço de Arcos no concelho de Oeiras e é gerido pela Força Ascendente, empresa especialista na formação, treino e acompanhamento de jogadores de ténis. </p>
+      <p class="info">3 Campos de relva sintética com ilumominação</p>
+      <p class="info">+</p>
+      <p class="info">1 Campo de mini-ténis com parede bate-bolas</p>
+      </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27380.758502962737!2d-9.352026925683646!3d38.6856765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1eceb42dd0517f%3A0x858a7fdd927f0656!2sT%C3%A9nis%20Nova%20Morada!5e1!3m2!1spt-PT!2spt!4v1745836587185!5m2!1spt-PT!2spt" width="300" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
-      <p>O Ténis Nova Morada localiza-se: Av. Fundadores 26, 2770-072 Paço de Arcos</p>
-      <p>Horários: Dias úteis: 9h às 23h, Sábados: 9h às 19h, Domingos: 9h às 13h</p>
+      <div class="box">
+      <p><strong> O Ténis Nova Morada localiza-se:</strong></p>
+        <p>Av. Fundadores 26, 2770-072 Paço de Arcos</p>
+      <b>Horários: </b>
+        <p> Dias úteis: 9h às 23h, Sábados: 9h às 19h, Domingos: 9h às 13h</p>
       <p>Website: <a href="https://www.tenisnovamorada.com/" target="_blank">tenisnovamorada.com</a></p>
-      <p>Nº de telefone: 910338480</p>
+      <b>Nº de telefone:</b> <p>910338480</p>
+      <b>Preçario alugar campos:</b>
+      <p> Envie e-mail para <a href="info@tenisnovamorada.com" target="_blank">tietennis.com</a></p>
+</div>
+      <div class="box">
+      <br>&#169;https://www.tenisnovamorada.com/</br>
+      </div>
     </div>
   
     <div id="jamor" class="location-info">
+      <img src="bate bolas.jpg" alt="Jamor" class="location-image2">
+      <img src="batida.jpg" alt="Jamor" class="location-image2">
+      <img src="coberto.jpg" alt="Jamor" class="location-image2">
+      <div class="box">
+      <p>O Clube de Ténis do Jamor tem como principal missão promover e enquadrar a prática da modalidade, por técnicos especializados e devidamente acreditados pela Federação Portuguesa de Ténis (FPT) oferecendo aos utentes classes dirigidas a vários escalões etários e diferentes níveis de ensino </p>
+      <p class="info1">1 Campo Central, em pó-de-tijolo</p>
+      <p class="info1">+</p>
+      <p class="info1">26 Campos Descobertos em pó-de-tijolo</p>
+      <p class="info1">+</p>
+      <p class="info1">3 Campos descobertos em betão poroso</p>
+      <p class="info1">+</p>
+      <p class="info1">6 Campos Cobertos em piso sintético</p>
+      <p class="info1">+</p>
+      <p class="info1">3 Paredes "bate-bolas" em piso sintético</p>
+      </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27372.128284999293!2d-9.290455925683622!3d38.70822410000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecc744046f473%3A0x11becc335a682200!2sClube%20de%20T%C3%A9nis%20do%20Jamor!5e1!3m2!1spt-PT!2spt!4v1745836652423!5m2!1spt-PT!2spt" width="300" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
-      <p>O Clube de Ténis do Jamor localiza-se: Complexo de Ténis do Estádio Nacional Dafundo</p>
-      <p>Horários: Dias úteis: 8h às 22h, Fins de semana: 8h às 20h</p>
-      <p>Nº de telefone: 214193054</p>
-    </div>
+      <div class="box">
+        <p><strong> O Clube de Ténis do Jamor localiza-se:</strong></p>
+      <p>Complexo de Ténis do Estádio Nacional Dafundo</p>
+       <b>Horários: </b>
+      <p>Dias úteis: 8h às 22h, Fins de semana: 8h às 20h</p>
+      <b>Nº de telefone:</b><p>214193054</p>
+      <p>Website: <a href="https://jamor.ipdj.pt/" target="_blank">jamor.ipdj.pt</a></p>
+      <b>Nº de telefone:</b> <p>214193054</p>
+      <b>Preçario alugar campos:</b>
+      <u>Todos os dias:</u>
+      <p><u>Federados-</u> Campos descobertos 3.00€ Campos cobertos 4.50€ Campo central 7.50€</p>
+      <p><u>Não Federados-</u> Campos descobertos 4.00€ Campos cobertos 5.50€ Campo central 10.00€</p>
+      <p><u>EXTRAS:</u>Taxa de luz-5.00€p/hora</p>
   </div>
-  
-  <script>
-    function showLocation(id) {
-      const allLocations = document.querySelectorAll('.location-info');
-      allLocations.forEach(loc => loc.classList.remove('active'));
-  
-      const selected = document.getElementById(id);
-      if (selected) selected.classList.add('active');
-    }
-  </script>
-  
-  <div id="treinadores" class="page"></div>
-  <div id="cameras" class="page"></div>
-  <div id="agenda" class="page"></div>
+      <div class="box">
+      <br>&#169;https://jamor.ipdj.pt/</br>
+      <p>&#169;https://www.tietennis.com/</p>
+      </div>
+    </div>
+</div>
+  </div>
+  <div id="treinadores" class="page"> 
+<h1>Com quem vou treinar?</h1>
+<div class="box">
+    <p>Em Oeiras tens uma lista de treinadores prontos para te ajudar e guiar-te no teu percurso nos vários polidesportivos </p>
 </div>
 
+  <div class="location-menu">
+      <button id="ceto-button" onclick="showLocation('ceto1')">CETO</button>
+      <button id="quinta-button" onclick="showLocation('quinta1')">Quinta da Moura</button>
+      <button id="nova-button" onclick="showLocation('nova1')">Nova Morada</button>
+      <button id="jamor-button" onclick="showLocation('jamor1')">Jamor</button>
+    </div>
+     <div id="ceto1" class="location-info">
+      <img src="cetooooo.jpg" alt="CETO" class="location-image">
+      <div class="box">
+      <p>O CETO trabalha em colaboração com a Cunha e Silva Tennis Academy o parceiro ideal em tudo o que diz respeito ao ténis competitivo, pré-competitivo e social. Contando com um conjunto de profissionais muito experientes nas áreas técnicas do ténis, na preparação física e mental, de fisioterapia e médica.</p>
+      </div>
+      <div class="box">
+      <p class="treinas">João Cunha e Silva</p>
+      </div>
+      <img src="Joao-Cunha-e-Silva-scaled.jpg" class="treinador1" alt="João Cunha e Silva">
+      <div class="box">
+      <p>Diretor Geral e Diretor Técnico da Competição</p>
+      </div>
+      
+<div class="box">
+<br>&#169;https://www.ceto.com.pt/</br>
+    </div>
+    </div>
+<div id="quinta1" class="location-info">
+      <img src="campo1.jpg" alt="Quinta" class="location-image1">
+      <img src="campo2.jpg" alt="Quinta" class="location-image1">
+      <div class="box">
+      <p>O Clube Quinta da Moura tem uma equipa de ténis composta por treinadores, diretores, um coordenador, um preparador físico e um psicólogo desportivo</p>
+      </div>
+      <div class="box">
+      <p class="treinas">Cláudio Cufré</p>
+      </div>
+      <img src="diretor.jpg" class="treinador2" alt="Cláudio Cufré">
+      <div class="box">
+      <p>Diretor técnico</p>
+     </div> 
+     <div class="box">
+      <p class="treinas">Emanuel Couto</p>
+      </div>
+      <img src="diretor2.jpg" class="treinador2" alt="Emanuel Couto">
+      <div class="box">
+      <p>Diretor técnico</p>
+      </div>
+      <div class="box">
+            <p class="treinas">  José Nunes </p>
+      </div>
+      <img src="treinaaa.jpg" class="treinador2" alt="José Nunes">
+      <div class="box">
+      <p>Treinador Competição Evo Team</p>
+      </div>
+      <div class="box">
+            <p class="treinas">Diogo Convas</p>
+      </div>
+      <img src="cordena.jpg" class="treinador2" alt="Diogo Convas">
+      <div class="box">
+      <p>Coordenador e Treinador Escola de Ténis</p>
+      </div>
+      <div class="box">
+            <p class="treinas">Pedro Matias </p>
+      </div>
+      <img src="prepara.jpg" class="treinador2" alt="Pedro Matias">
+      <div class="box">
+      <p>Preparador Físico Evo Team</p>
+      </div>
+      <div class="box">
+      <p class="treinas"> Valdemar Barbosa</p>
+      </div>
+            <img src="psico.jpg" class="treinador2" alt="Valdemar Barbosa">
+            <div class="box">
+      <p>Psicólogo Desportivo</p>
+      </div>
+<div class="box">
+      <br>&#169;https://www.tietennis.com/</br>
+      </div>
+</div>
 
+    
+<div id="nova1" class="location-info">
+   <img src="2020-06-14.jpg" alt="Nova" class="location-image2">
+      <img src="tenisCampo2.jpg" alt="Nova" class="location-image2">
+      <div class="box">
+      <p>O Ténis Nova Morada tem uma equipa de 1 Diretor do Centro de Ténis e 2 Treinadores</p>
+      </div>
+      <div class="box">
+      <p class="treinas">André Ferreira</p>
+      </div>
+      <img src="André ferreira.png" alt="Jamor" class="moras">
+      <div class="box">
+      <p>Director do Centro de Ténis e Treinador</p>
+      </div>
+      <div class="box">
+      <p class="treinas">Rui Macedo</p>
+      </div>
+      <img src="rui macedo.png" alt="Jamor" class="moras">
+      <div class="box">
+      <p>Treinador</p>
+      </div>
+      <div class="box">
 
+<br>&#169;https://www.tenisnovamorada.com/</br>
+</div>
+    </div>
+
+ <div id="jamor1" class="location-info">
+  <img src="bate bolas.jpg" alt="Jamor" class="location-image2">
+      <img src="batida.jpg" alt="Jamor" class="location-image2">
+      <img src="coberto.jpg" alt="Jamor" class="location-image2">
+      <div class="box">
+      <p>O Centro de Treino de Ténis do Jamor tem 35 campos de ténis, sendo composto por um grande grupo de treinadores</p>
+      </div>
+      <div class="box">
+      <p class="treinas">Grupo de treinadores do Jamor</p>
+      </div>
+      <img src="grupo jamor.png" alt="Jamor" class="jama">
+<div class="box">
+<br>&#169;https://jamor.ipdj.pt/</br>
+</div>
+    </div>
+</div>
+  <div id="agenda" class="page">
+    <h1>Quem é que joga hoje?</h1>
+    <p>Uma lista de todos os jogos que estão a acontecer ou vão acontecer </p>
+     <iframe id="sp-main-body" name="myFrame" src="https://www.livescorehunter.com/tennis-livescore-live-stream-links" width="394" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+
+<br>&#169;https://www.livescorehunter.com/</br>
+</div>
+
+  <div id="Notícias" class="page">
+    <h1>O que se passa no mundo do Ténis?</h1>
+    <div class="box">
+      <p>Fica a par das últimas notícias e saber o que está a acontecer</p>
+    </div>
+    <iframe src="https://bolamarela.pt/embed/" width="100%" height="500px" frameborder="0"></iframe>
+    <div class="box">
+      <br>&#169;https://bolamarela.pt/</br>
+    </div>
+</div>
+  <div id="Agora és tu" class="page">
+    <h1>Como vou fazer isto sozinho?</h1>
+    <div class="box">
+<p>Queres aprender como jogar Ténis mas não sabes como começar?</p>
+<p><u>Estás no sítio certo</u>, aqui está um guia completo em 3 simples passos para o que precisas para jogar este desporto</p>
+</div>
+ <div class="location-menu">
+      <button id="equipamento-button" onclick="showLocation('equipamento')">Equipamento</button>
+      <button id="preparação-button" onclick="showLocation('preparação')">Preparação</button>
+      <button id="Põe-te à prova-button" onclick="showLocation('Põe-te à prova')">Põe-te à prova</button>
+    </div>
+        <div id="equipamento" class="location-info">
+          <div class="box">
+      <p class="info"> 1º Equipamento</p>
+    <p>Depois de teres lido a informação de regras básicas, pontuação e um pouco da história, estás pronto para o próximo passo, o equipamento.</p>
+    <p>Para comprares os teus equipamentos nos melhores sítios ;)</p>
+    </div>
+    <div class="image-container">
+    <a href="https://www.decathlon.pt/todos-os-desportos/tenis" target="_blank">
+      <img class="clickable-image" src="decathlon.png" alt="Clickable Image">
+  </div>
+      <div class="image-container">
+    <a href="https://www.casasenna.com/pt/modalidades/tenis-de-campo" target="_blank">
+      <img class="clickable-image" src="senna.png" alt="Clickable Image">
+  </div>
+  <div class="image-container">
+    <a href="https://www.sprintersports.com/pt/loja-tenis-desporto" target="_blank">
+      <img class="clickable-image" src="sport.png" alt="Clickable Image">
+  </div>
+  <div class="box">
+<br>&#169; <a href="https://www.decathlon.pt/" target="_blank" rel="noopener noreferrer">https://www.decathlon.pt/</a></br>
+<p>&#169; <a href="https://www.casasenna.com/pt/" target="_blank" rel="noopener noreferrer">https://www.casasenna.com/pt/</a></p>
+<p>&#169; <a href="https://www.sprintersports.com/" target="_blank" rel="noopener noreferrer">https://www.sprintersports.com/</a></p>
+    </div>
+    </div>
+        <div id="preparação" class="location-info">
+          <div class="box">
+      <p class="newinfo">2º Preparação</p>
+    <p>Agora que tens o teu equipamento pronto tens de começar a preparar-te para poderes jogar</p>
+    <p>Mas não te esqueças do aquecimento, a minha professora de Educação Física está sempre a avisar</p>
+    <p>Aqui estão alguns exercícios</p>
+    </div>
+      <img src="Pickle-Ball-AND-TENNIS-Dynamic-Warmup-Exercises-Phoenix_page-0001.jpg" class="warm" alt="warmup exercises">
+       <img src="Pickle-Ball-AND-TENNIS-Dynamic-Warmup-Exercises-Phoenix_page-0002.jpg" class="warm" alt="warmup exercises">
+       <div class="box">
+<p>Primeiros passos</p>
+</div>
+  <iframe 
+  src="https://www.youtube.com/embed/F5tu9Qem8RI" 
+  width="300" 
+  height="350" 
+  style="border:0;" 
+  allowfullscreen 
+  loading="lazy">
+</iframe>
+<div class="box">
+<p>Agora vamos ao treino</p>
+</div>
+<iframe 
+  src="https://www.youtube.com/embed/9fQA4b8HZGw" 
+  width="300" 
+  height="350" 
+  style="border:0;" 
+  allowfullscreen 
+  loading="lazy">
+</iframe>
+<br></br>
+<iframe 
+  src="https://www.youtube.com/embed/X6-W-R2iNu8" 
+  width="300" 
+  height="350" 
+  style="border:0;" 
+  allowfullscreen 
+  loading="lazy">
+</iframe>
+<div class="box">
+<br>&#169;https://phoenixphysicaltherapy.com/</br>
+  <p>&#169;https://www.youtube.com/</p>
+    </div>
+    </div>
+
+     <div id="Põe-te à prova" class="location-info">
+      <div class="box">
+      <p class="newinfo">3º Põe-te à prova</p>
+    <p>Com um treino préviamentr feito e equipamento estás pronto para começar a jogar</p>
+    <p>É acocelhével procurares um treinador se fores um iniciante (podes encontrar esta informação na aba Treinadores)</p>
+    <p><u>Nota:</u>Deves procurar pessoas que estão no teu nível, se partipares em aulas de grupo </p>
+    </div>
+      <img src="Serena_Williams_US_Open_2013.jpg" class="serena" alt="Serena Williams">
+      <div class="box">
+      <p>“Um campeão não é definido pelas suas vitórias, mas pela forma como consegue recuperar quando cai.”</p>
+
+      <p class="newinfo">Boa sorte e Bom Jogo!  :)</p>
+      </div>
+<br>&#169;https://pt.wikipedia.org/</br>
+</div>
+    </div>
+  </div>
 <script>
   const links = document.querySelectorAll('.menu-link');
   const pages = document.querySelectorAll('.page');
@@ -252,6 +555,15 @@
     if (selected) selected.classList.add('active');
   }
 
+    function showLocation(id) {
+      const allLocations = document.querySelectorAll('.location-info');
+      allLocations.forEach(loc => loc.classList.remove('active'));
+  
+      const selected = document.getElementById(id);
+      if (selected) selected.classList.add('active');
+    }
+
+</script>
 
 </script>
 

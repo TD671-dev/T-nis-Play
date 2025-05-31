@@ -100,6 +100,7 @@ body {
 }
 
 #checkbox:checked + .btn {
+    position: fixed;
     width: 250px;
     padding: 0 20px;
 }
@@ -200,3 +201,136 @@ body {
     height: 200px;
     display: block;
   }
+
+.info{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.treinas{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.treinador1{
+  width: 350px;
+}
+
+    .location-menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 1rem;
+    }
+  
+    .location-menu button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #0077cc;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  
+    .location-menu button:hover {
+      background-color: #005fa3;
+    }
+  
+    .location-info {
+      display: none;
+      margin-top: 1rem;
+      border-top: 2px solid #ccc;
+      padding-top: 1rem;
+    }
+  
+    .location-info.active {
+      display: block;
+    }
+
+.location-image1{
+    width: 350px;
+    height: 200px;
+
+}
+.location-image2{
+    width: 350px;
+    height: 200px;
+
+}
+.info1{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.jama{
+    width: 350px;
+    height: 300px;
+    display: block;
+}
+.treinador2{
+  width: 200px;
+}
+.moras{
+    width: 150px;
+    height: 260px;
+    display: block;
+}
+.clickable-image {
+      width: 300px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .clickable-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .warm{
+    width: 370px;
+    margin-right: -90px;
+    height: 600px;
+    }
+.newinfo{
+  font-weight: bold;
+    font-size: 20px;
+}
+.location-info p a {
+  color: #333; /* dark color */
+  text-decoration: none;
+}
+
+.location-info p a:hover {
+  text-decoration: underline;
+  color: #247D9E; /* your blue accent */
+}
+.serena{
+    width: 250px;
+    height: 300px;
+    display: block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("output-onlinepngtools\ \(1\).png");
+  background-repeat: repeat;
+  background-size: 500px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+h2{
+  color: #233a04;
+}
+h1{
+  color: #233a04;
+}
